@@ -6,9 +6,23 @@ body{
     color: aliceblue;
 }
 p{
-    font-family: "Alex Brush", cursive;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
+    font-family: "Kaushan Script";
 
 }
 
+h1 {
+    font-family: "Alex Brush", cursive;
+    font-weight: 100;
+    color: #f3d302;
+    align-content: center;
+}
+
+h2 {
+    font-family: "Babylonica", cursive;
+}
+
+h3 {
+    font-family: "Kaushan Script";
+}
