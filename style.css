@@ -26,3 +26,10 @@ h2 {
 h3 {
     font-family: "Kaushan Script";
 }
+
+.page-wrapper {
+    background-image: url(Scroll_Image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+}
