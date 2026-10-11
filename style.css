@@ -9,18 +9,11 @@ body{
 
 p {
     display: flex;
-    font-weight: 100;
-    font-style: normal;
     font-family: "Kaushan Script";
-    text-align: left;
+    justify-content: flex-start;
     margin-left: 12%;
     margin-right: 12%;
     flex-wrap: wrap;
-}
-
-abbr,a {
-    display: flex;
-    
 }
 
 h1 {
@@ -28,7 +21,7 @@ h1 {
     font-family: "Alex Brush", cursive;
     font-weight: 100;
     color: #f3d302;
-    align-self: flex-start;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 5%;
 }
@@ -45,7 +38,7 @@ h3 {
     margin-right: 12%;
 }
 
-.page-wrapper{
+.page-wrapper:not(h1){
     display: flex;
     background-image: url(Scroll_Image3.jpg);
     background-repeat: repeat-y;
@@ -59,11 +52,13 @@ h3 {
     flex-flow: wrap;
 }
 
-.extra1 {
+
+
+div.extra1[role="presentation"] {
     background-image: url(Scroll_End_Image.png);
     background-size: 100%;
     position: relative;
-    z-index: 50;
+    z-index: 10;
 }
 
 .extra2 {
@@ -75,5 +70,17 @@ h3 {
     background-position-y: 110px;
     position: relative;
     z-index: 100;
+}
+
+.extra3 {
+    background-image: url(Scroll_Image3.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 90%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    min-height: 100vh;
 }
 
