@@ -58,8 +58,33 @@ h3 {
 
 .design-selection {
     display: flex;
-    visibility: hidden;
+    background-repeat: no-repeat;
+    border: 1px solid green;
     background-image: url(Cushion_&_Message_Image.png);
+    background-position-x: center;
+    position: fixed;
+    bottom: 0;
+    right: -100vh;
+    height: 70vh;
+    width: 445px;
+    z-index: 20;
+}
+
+.design-selection {
+    display: flex;
+    font-size: x-small;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 20;
+}
+
+.design-selection h3,li {
+    display: flex;
+}
+
+.design-selection h3 {
+    display: flex;
 }
 
 .extra2 {
@@ -93,7 +118,7 @@ h3 {
     background-image: url();
     background-size: 100%;
     display: flex;
-    margin-top: 160rem;
+    margin-top: 0rem;
     width: 91%;
     height: 100%;
     position: absolute;
@@ -105,7 +130,7 @@ h3 {
     background-image: url();
     background-size: 100%;
     display: flex;
-    margin-top: 160rem;
+    margin-top: 0rem;
     width: 91%;
     height: 100%;
     position: absolute;
@@ -117,7 +142,7 @@ h3 {
     background-image: url();
     background-size: 100%;
     display: flex;
-    margin-top: 160rem;
+    margin-top: 0rem;
     width: 91%;
     height: 100%;
     position: absolute;
@@ -129,7 +154,7 @@ h3 {
     background-image: url();
     background-size: 100%;
     display: flex;
-    margin-top: 160rem;
+    margin-top: 0rem;
     width: 91%;
     height: 100%;
     position: absolute;
@@ -147,4 +172,10 @@ h3 {
 .page-wrapper,body {
     display: flex;
     flex-flow: column;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    order: 10;
 }
