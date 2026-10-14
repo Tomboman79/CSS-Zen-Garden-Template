@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Babylonica&family=Kaushan+Script&display=swap');
 
+/*Makes the background black*/
 body{
     display: flex;
     background-color: black;
@@ -8,6 +9,7 @@ body{
     position: relative;
 }
 
+/*Modifies all the paragraphs to be the same font*/
 p {
     display: flex;
     font-family: "Kaushan Script";
@@ -17,6 +19,8 @@ p {
     flex-wrap: wrap;
 }
 
+
+/*Makes the main title prettier*/ 
 h1 {
     display: flex;
     font-family: "Alex Brush", cursive;
@@ -29,18 +33,21 @@ h1 {
     position: relative;
 }
 
+/*Makes the sub-titles prettier*/
 h2 {
     font-family: "Babylonica", cursive;
     margin-left: 12%;
     margin-right: 12%;
 }
 
+/*Makes the sub-sub-titles prettier*/
 h3 {
     font-family: "Kaushan Script";
     margin-left: 12%;
     margin-right: 12%;
 }
 
+/*Adds the background and it specifications*/
 .page-wrapper:not(h1){
     display: flex;
     background-image: url(Scroll_Image3.jpg);
@@ -53,40 +60,176 @@ h3 {
     margin-bottom: 150px;
     min-height: 100vh;
     flex-flow: wrap;
-    border: 1px solid red;
 }
 
+/*Adds the design selection window to make things prettier*/
 .design-selection {
     display: flex;
     background-repeat: no-repeat;
-    border: 1px solid green;
     background-image: url(Cushion_&_Message_Image.png);
     background-position-x: center;
-    position: fixed;
-    bottom: 0;
-    right: -100vh;
-    height: 70vh;
+    font-size: x-small;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    padding-left: 150px;
+    flex-flow: column;
+    right: -80vh;
+    top: 70vh;
+    height: 60vh;
     width: 445px;
     z-index: 20;
 }
 
-.design-selection {
+/*Makes the design selection window appear while hovering*/
+.design-selection:hover {
     display: flex;
+    background-repeat: no-repeat;
+    background-image: url(Cushion_&_Message_Image.png);
+    background-position-x: center;
     font-size: x-small;
     justify-content: center;
+    align-items: start;
+    position: absolute;
+    padding-left: 150px;
+    padding-top: 0;
     flex-flow: column;
-    position: relative;
+    right: 10vh;
+    top: 70vh;
+    height: 60vh;
+    width: 445px;
     z-index: 20;
 }
 
-.design-selection h3,li {
+/*Helps allign text in the design selection*/
+.design-selection h3,.design-selection li{
     display: flex;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -20px;
+    right: 5px;
+    flex-wrap: wrap;
 }
 
-.design-selection h3 {
-    display: flex;
+/*Same as the last one*/
+.design-selection ul {
+    width: 120px;
 }
 
+/*Adds the design archives window to make things prettier*/
+.design-archives {
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(Cushion_&_Message_Image.png);
+    background-position-x: center;
+    font-size: small;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    padding-left: 180px;
+    padding-top: 0;
+    flex-flow: column;
+    right: -80vh;
+    top: 150vh;
+    height: 70vh;
+    width: 445px;
+    z-index: 21;
+}
+
+/*Makes the design archives window appear while hovering*/
+.design-archives:hover {
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(Cushion_&_Message_Image.png);
+    background-position-x: center;
+    font-size: small;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    padding-left: 190px;
+    padding-top: 0;
+    flex-flow: column;
+    right: 10vh;
+    top: 150vh;
+    height: 70vh;
+    width: 445px;
+    z-index: 21;
+}
+
+/*Helps allign text in the design archives*/
+.design-archives h3,.design-archives li{
+    display: flex;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -20px;
+    right: 10px;
+    flex-wrap: wrap;
+}
+
+/*Same as last one*/
+.design-archives ul {
+    width: 120px;
+}
+
+/*Adds the zen resources window to make things prettier*/
+.zen-resources {
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(Cushion_&_Message_Image.png);
+    background-position-x: center;
+    font-size: small;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    padding-left: 180px;
+    padding-top: 0;
+    flex-flow: column;
+    right: -80vh;
+    top: 230vh;
+    height: 70vh;
+    width: 445px;
+    z-index: 22;
+}
+
+/*Makes the zen resources window appear while hovering*/
+.zen-resources:hover {
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(Cushion_&_Message_Image.png);
+    background-position-x: center;
+    font-size: small;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    padding-left: 190px;
+    padding-top: 0;
+    flex-flow: column;
+    right: 10vh;
+    top: 230vh;
+    height: 70vh;
+    width: 445px;
+    z-index: 22;
+}
+
+/*Helps allign text in the zen resources*/
+.zen-resources h3,.zen-resources li{
+    display: flex;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -30px;
+    right: 10px;
+    flex-wrap: wrap;
+}
+
+/*Same as last one*/
+.zen-resources ul {
+    width: 120px;
+}
+
+/*Adds the starting image of the scroll*/
 .extra2 {
     background-image: url(Scroll_Start_Image.png);
     background-size: 100%;
@@ -101,11 +244,12 @@ h3 {
     background-repeat: no-repeat;
 }
 
+/*Adds the end image of the scroll*/
 .extra1 {
     background-image: url(Scroll_End_Image.png);
     background-size: 100%;
     display: flex;
-    bottom: 25px;
+    bottom: 15px;
     width: 91%;
     height: 100%;
     position: absolute;
@@ -114,10 +258,12 @@ h3 {
     background-repeat: repeat;
 }
 
+/*Adds the first shield image at the top of the page*/
 .extra3 {
-    background-image: url();
-    background-size: 100%;
+    background-image: url(Shield_Image.png);
+    background-size: 120px;
     display: flex;
+    background-position: 0% 0px;
     margin-top: 0rem;
     width: 91%;
     height: 100%;
@@ -126,18 +272,21 @@ h3 {
     align-self: center;
 }
 
+/*Adds the second shiled image at the top of the page*/
 .extra4 {
-    background-image: url();
-    background-size: 100%;
+    background-image: url(Shield_Image.png);
+    background-size: 120px;
     display: flex;
+    background-position: 100% 0px;
     margin-top: 0rem;
     width: 91%;
     height: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
     align-self: center;
 }
 
+/*Does absolutely nothing, why is this here*/
 .extra5 {
     background-image: url();
     background-size: 100%;
@@ -150,6 +299,7 @@ h3 {
     align-self: center;
 }
 
+/*Same as the last one, why did I add this?*/
 .extra6 {
     background-image: url();
     background-size: 100%;
@@ -162,20 +312,289 @@ h3 {
     align-self: center;
 }
 
+/*Makes all the extras the same height, for some reason. I believe that this actually caused more problems than it needed to*/
 .extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
     display: flex;
     height: 150px;
-    border: 1px solid red;
     background-repeat: no-repeat;
 }
 
+/*Organizes the text in the page*/
 .page-wrapper,body {
     display: flex;
     flex-flow: column;
 }
 
+/*Makes the footer look slightly more organized*/
 footer {
     display: flex;
     justify-content: space-evenly;
     order: 10;
 }
+
+/*I wish to be released from the torment that is being a newbie at flexbox*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*The only reason I managed to finish this was because of Igon from Elden Ring lending me some of his spite, shout out to him, CUUUURSE YOUUUUU BAAAAYYYYLEEEEE!*/
